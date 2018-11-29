@@ -1,0 +1,56 @@
+﻿@model AddressBookCore.Entities.Contact
+
+@{
+    ViewBag.Title = "Form";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="container">
+    <div id="overlay">
+        <div class="popup-container">
+            @using (Html.BeginForm("Form", "AddressBook"))
+            {
+                @Html.AntiForgeryToken()
+
+                @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+                @if (!(Model is null))
+                {
+                    <input type="hidden" name="Id" id="Id" value="@Model.Id">
+                }
+                <div class="block">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" placeholder="Your name..">
+                    @Html.ValidationMessageFor(model => model.Name, "", new { @class = "nameRequired" })
+                </div>
+                <div class="block">
+                    <label for="email">Email</label>
+                    <input type="text" id="email" name="email" placeholder="Your email..">
+                    @Html.ValidationMessageFor(model => model.Email, "", new { @class = "emailRequired" })
+                </div>
+                <div class="content">
+                    <div class="list-content">
+                        <label for="mobile">Mobile</label>
+                        <input type="number" id="mobile" name="mobile" placeholder="Your mobile..">
+                        @Html.ValidationMessageFor(model => model.Mobile, "", new { @class = "mobileRequired" })
+                    </div>
+                    <div class="list-content">
+                        <label for="landline">Landline</label>
+                        <input type="number" id="landline" name="landline" placeholder="Your landline..">
+                    </div>
+                </div>
+                <div class="block">
+                    <label for="website">website</label>
+                    <input type="text" id="website" name="website" placeholder="Your website..">
+                </div>
+                <div class="block">
+                    <label for="address">Address</label>
+                    <textarea id="address" name="address" style="height:200px"></textarea>
+                </div>
+                <input id="addContactButton" type="submit" value="Add">
+                <input id="cancel" type="button" value="Cancel">
+
+            }
+
+        </div>
+    </div>
+</div>

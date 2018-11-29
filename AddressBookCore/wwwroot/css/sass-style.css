@@ -1,0 +1,191 @@
+.m-0, .contact p {
+  margin: 0; }
+
+.header {
+  height: 110px;
+  background-color: #3399cc; }
+  .header h2 {
+    padding-top: 30px;
+    padding-left: 20px;
+    font-size: 50px;
+    color: white;
+    font-family: lucida sans;
+    font-weight: lighter;
+    margin: 0;
+    padding-bottom: 20px; }
+
+.menu {
+  height: 35px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: #333;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center; }
+  .menu ul {
+    list-style-type: none;
+    margin: 0;
+    overflow: hidden;
+    height: 35px;
+    padding-left: 20px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex; }
+  .menu li {
+    font-size: 19px;
+    color: black;
+    font-family: calibri;
+    font-weight: 800;
+    padding: 3.5px 6px;
+    max-width: 100%;
+    height: -webkit-fill-available;
+    border-left: 5px solid transparent; }
+    .menu li:hover {
+      background-color: #ff9900;
+      border-left: 5px solid white;
+      color: black; }
+      .menu li:hover a {
+        color: black; }
+    .menu li a {
+      display: block;
+      color: white;
+      text-align: center;
+      padding-right: 4px;
+      text-decoration: none; }
+
+.image-menu {
+  padding-right: 30px;
+  height:24px;}
+
+.cntct-heading {
+  margin: 10px 20px;
+  font-size: 22px;
+  color: black;
+  font-family: calibri; }
+
+.container {
+  margin: 0px 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+
+.contacts {
+  width: 385px; }
+
+.contact {
+  font-size: 15px;
+  color: black;
+  font-family: calibri;
+  border: 1px solid grey;
+  padding: 10px; }
+  .contact:not(:first-of-type) {
+    border-top: 0; }
+  .contact:hover {
+    background-color: lightblue; }
+  .contact:active {
+    background-color: lightblue; }
+  .contact h1 {
+    margin-top: 0px;
+    margin-bottom: 6px;
+    font-weight: lighter; }
+
+#overlay {
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.8);
+  display:block;
+}
+
+.popup-container {
+  top: 165px;
+  left: 427px;
+  position: relative;
+  border-radius: 5px;
+  padding: 20px;
+  margin: 0px 40px;
+  border: 1px solid gray;
+  -webkit-box-shadow: 0px 0px 10px 5px #333;
+  box-shadow: 0px 0px 10px 5px #333;
+  background-color: white;
+  max-width: 700px;
+  font-size: 15px;
+  color: black;
+  font-family: calibri;
+  font-weight: bold; }
+  .popup-container input[type=text], .popup-container select, .popup-container textarea {
+    width: 100%;
+    padding: 12px; }
+  .popup-container .block {
+    margin-bottom: 16px; }
+  .popup-container span {
+    color: red;
+    font-size: 13px; }
+  .popup-container input[type=submit], .popup-container input[type=button] {
+    background-color: #468c00;
+    color: white;
+    padding: 12px 20px;
+    border: none; }
+  .popup-container .content {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between; }
+  .popup-container .list-content {
+    margin-bottom: 16px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column; }
+    .popup-container .list-content input[type=number] {
+      width: 100%;
+      padding: 12px;
+      margin-right: 10px; }
+    .popup-container .list-content label {
+      margin-bottom: 6px; }
+
+.selected {
+  background-color: lightblue; }
+
+#contact-info {
+  display: block !important;
+  margin-left: 60px;
+  font-size: 15px;
+  color: black;
+  font-family: calibri; }
+  #contact-info .contact-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex; }
+  #contact-info .display-contact {
+    width: 300px; }
+    #contact-info .display-contact p {
+      margin-bottom: 10px; }
+    #contact-info .display-contact div p {
+      margin-bottom: 0px;
+      margin-top: 0px; }
+  #contact-info .icons {
+    display: inline;
+    margin: 20px 50px; }
+    #contact-info .icons #image-1 {
+      width: 15px;
+      height: 15px; }
+    #contact-info .icons #image-2 {
+      vertical-align: sub; }
+    #contact-info .icons img {
+      margin-right: 5px; }
+    #contact-info .icons span {
+      margin-right: 10px; }

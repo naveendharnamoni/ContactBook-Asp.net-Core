@@ -1,0 +1,33 @@
+﻿@using AddressBookCore.Entities
+
+@if (Model != null)
+{
+    <div id="contact-info">
+        <div class="contact-container">
+            <div class="display-contact">
+                <h1 id="display-name"> @Model.Name</h1>
+                <p id="display-email"><b> Email: </b> @Model.Email</p>
+                <div>
+                    <p id="display-phone"><b> Mobile: </b>@Model.Mobile</p>
+                    <p id="display-landline"><b> Landline: </b>@Model.Landline</p>
+                </div>
+                <p id="display-website"><b> Website: </b>@Model.Website</p>
+                <p id="display-address"><b> Address: </b>@Model.Address</p>
+            </div>
+            <div class="icons">
+                <a asp-action="Edit" asp-route-id="@Model.Id">
+                    <div id="edit">
+                        <img id="image-1" src="~/images/Edit-icon.png" alt="edit"><span>EDIT</span>
+                    </div>
+                </a>
+                <a href="@Url.Action("Delete","AddressBook",new { id = Model.Id }) " onclick="return confirmDelete()">
+                    <div id="delete">
+                        <img id="image-2" src="~/images/delete1.png" alt="delete"><span>DELETE</span>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+
+}
+

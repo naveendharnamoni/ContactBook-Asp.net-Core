@@ -1,0 +1,17 @@
+﻿@model IEnumerable<AddressBookCore.Entities.Contact>
+
+<div class="contacts">
+    @if (Model != null)
+    {
+        foreach (var contact in Model)
+        {
+            <a asp-action="Details" asp-route-id="@contact.Id">
+                <div class="contact" id="@contact.Id">
+                    <h1 class="pname">@contact.Name</h1>
+                    <p class="pemail">@contact.Email</p>
+                    <p class="pmobile">@contact.Mobile</p>
+                </div>
+            </a>
+        }
+    }
+</div>
