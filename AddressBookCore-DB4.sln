@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.28307.106
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AddressBookCore.Web", "AddressBookCore\AddressBookCore.Web.csproj", "{9A16E880-C9F6-46F0-956D-9B87471F7A10}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AddressBookCore.Web", "AddressBookCore.Web\AddressBookCore.Web.csproj", "{9A16E880-C9F6-46F0-956D-9B87471F7A10}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AddressBookCore.Entities", "AddressBookCore.Entities\AddressBookCore.Entities.csproj", "{D63AFC2F-5EDA-42BF-9D72-41BF72B0612F}"
 EndProject
